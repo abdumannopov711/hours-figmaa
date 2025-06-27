@@ -8,10 +8,259 @@
 body{
     display: flex;
     flex-direction: column;
-    min-height: 200vh;
+    min-height: 700vh;
+    font-family: sans-serif;
 }
 .container{
+    width: 1920px;
     margin: 0 auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 200px;
 }
+.header{
+    position: absolute;
+    background-image: url('../img/фон\ 1.png');
+    width: 100%;
+    height: 948px; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.header__nav{
+    display: flex;
+    align-content: center;
+    gap: 30px;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    gap: 40px;  
+}
+
+.home{
+    margin-top: 200px;
+}
+.home__general{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.home__title{
+    font-size: 57px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.home__img{
+    position: absolute;
+    right: 200px;
+    top: 150px;
+    width: 700px;
+}
+.home__text{
+    font-size: 24px;
+    color: #646464;
+    margin-bottom: 60px;
+}
+.home__textBox{
+    z-index: 100;
+}
+
+
+.about{
+    margin-top: 500px;
+}
+.about__general{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.about__title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.about__box{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+    margin-bottom: 70px;
+}
+.about__text{
+    font-size: 18px;
+    font-weight: 700;
+}
+.about__subject{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #008139;
+}
+.about__parag{
+    font-size: 16px;
+    color: #7E7E7E;
+}
+.card{
+    margin-top: 200px;
+}
+.card__general{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__box{
+    text-align: center;
+}
+.card__title{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card__parag{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card__img{
+    margin-bottom: 20px;
+}
+.card__subject{
+    margin-bottom: 20px;
+}
+.card__text{
+    font-size: 16px;
+    color: #646464;
+}
+.image{
+    margin-top: 150px;
+}
+.image__title{
+    font-size: 32px;
+    text-align: center;
+    color: #363434;
+}
+.image__parag{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.image__general{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 70px;
+    text-align: center;
+}
+.image__img{
+    margin-bottom: 30px;
+}
+.image__subject{
+    margin-bottom: 30px;
+}
+.image__box{
+    background-color: aqua;
+    width: 370px;
+    padding: 30px 0;
+}
+.home__btn{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 70px;
+    border: none;
+    background-color: #FFC700;
+    color: #6A5300;
+    display: flex;
+}
+.image__btn{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 70px;
+    border: none;
+    background-color: #FFC700;
+    color: #6A5300;
+    display: flex;
+    margin: 50px auto;
+}
+
+
+.slider__title{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #363434;
+    margin-bottom: 50px;
+}
+.slide{
+    margin-top: 150px;
+}
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin; /* Firefox uchun */
+  }
+  
+  .slider::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .slider::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .slider__img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  .carusel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .carusel__track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .carusel__item {
+    min-width: 100%;
+  }
+  .carusel__item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  .slider__dots {
+    margin-top: 20px;
+  }
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .dot.active {
+    background: #FFAB08;
+  }
+
+
+  .menu__mobile{
+    display: none;
+  }
+  .menu__toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
